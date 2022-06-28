@@ -1,0 +1,51 @@
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+
+  > *:nth-child(2) {
+    width: 500px;
+  }
+}
+
+.slider {
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #242526;
+  cursor: pointer;
+
+  svg {
+    color: white;
+  }
+
+  &-left {
+    right: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-right {
+    left: 100%;
+    transform: translate(50%, -50%);
+  }
+}

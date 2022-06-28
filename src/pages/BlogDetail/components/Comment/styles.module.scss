@@ -1,0 +1,153 @@
+.container {
+  --space: 20px;
+
+  background-color: #242526;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    color: #a7aaaf;
+    cursor: pointer;
+    user-select: none;
+
+    &-text {
+      white-space: nowrap;
+      margin-right: 3px;
+    }
+
+    &-icon {
+      flex-shrink: 0;
+      width: 16px;
+    }
+  }
+}
+
+.white {
+  color: white;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.gray {
+  color: #a7aaaf;
+  font-weight: 500;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  &-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  &-wrapper {
+    position: relative;
+
+    background-color: #3a3b3c;
+    border-radius: 9999px;
+    flex: 1;
+  }
+
+  &-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 14px var(--space);
+    color: white;
+    width: 100%;
+  }
+
+  &-input:not(:placeholder-shown) ~ &-placeholder {
+    display: none;
+  }
+
+  &-placeholder {
+    position: absolute;
+    left: var(--space);
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #a7aaaf;
+
+    pointer-events: none;
+    user-select: none;
+    font-size: 1.4rem;
+
+    .bold {
+      font-weight: 500;
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}
+
+.item {
+  display: flex;
+
+  font-size: 1.4rem;
+  margin-top: 20px;
+
+  &-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  &-wrapper {
+    padding: 14px var(--space);
+    border-radius: 20px;
+    background-color: #3a3b3c;
+  }
+
+  &-name {
+    font-weight: 500;
+    color: white;
+  }
+
+  &-content {
+    color: white;
+    margin-top: 10px;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    font-size: 1.2rem;
+    padding-left: var(--space);
+  }
+
+  &-rep {
+    color: white;
+  }
+
+  &-time {
+    color: #a7aaaf;
+  }
+}
+
+.more {
+  color: #a7aaaf;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  gap: 20px;
+
+  > :last-child {
+    width: calc(100% / 3);
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3) * 2;
+  gap: 20px;
+}

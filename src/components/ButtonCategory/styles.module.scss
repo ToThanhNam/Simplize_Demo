@@ -1,0 +1,38 @@
+.btn {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: white;
+  background-color: #242526;
+  border-radius: 10px;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+
+  &.primary {
+    background-image: linear-gradient(to right bottom, #6a5af9, #f62682);
+  }
+
+  &:hover {
+    background-color: #3a3b3c;
+
+    &.primary::before {
+      background-color: #3a3b3c;
+    }
+  }
+
+  &.primary::before {
+    position: absolute;
+    content: '';
+    inset: 2px;
+    background-color: #242526;
+    border-radius: inherit;
+  }
+
+  div {
+    position: relative;
+  }
+}
