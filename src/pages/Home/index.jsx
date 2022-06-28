@@ -4,13 +4,15 @@ import CardList from './components/CardList';
 import Category1 from './components/Category1';
 import Category2 from './components/Category2';
 import Category3 from './components/Category3';
-import CategoryHero from './components/Category_Hero';
+import Navbar from '../Home/components/Navbar'
+import Hero from '../Home/components/Hero'
 
 const Home = () => {
   return (
     <>
       <Container>
-        <CategoryHero />
+        <Navbar/>
+        <Hero/>
         <CardList />
         <Category1 />
         <Category2 />

@@ -2,6 +2,8 @@ import Blog from './pages/Blog';
 import Home from './pages/Home';
 import BlogDetail from './pages/BlogDetail';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 function App() {
   return (
@@ -18,13 +20,6 @@ function App() {
 }
 
 export default App;
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-import Navbar from './pages/home/components/Navbar';
-import Hero from './pages/home/components/Hero';
-import Category from './pages/home/components/Category_Hero'
-import CategoryDetail from './pages/home/components/Category_Detail';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDe2D66Xw_Wuul6Ru0t8GKbR8lJq3qNpmc",
